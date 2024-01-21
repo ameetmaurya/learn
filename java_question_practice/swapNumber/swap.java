@@ -1,4 +1,4 @@
-package java_question_practice.swapNumber;
+package swapNumber;
  
 import java.util.*;;
 public class swap {

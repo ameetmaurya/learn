@@ -1,4 +1,4 @@
-package java_question_practice.CheckVowel;
+package CheckVowel;
 import java.util.*;
 public class vowel {
 

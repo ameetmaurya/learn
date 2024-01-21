@@ -1,5 +1,6 @@
 package CheckPrimeNo;
 import java.util.*;
+
 class prime{
    
     Scanner sc = new Scanner(System.in);
@@ -9,6 +10,9 @@ class prime{
         if(n%2!=0)
         {
             System.out.println("the given number is prime");
+        }else
+        {
+            System.out.println("not a prime Number");
         }
         return 0;
     }
