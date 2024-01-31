@@ -1,6 +1,6 @@
 package Inheritance_in_java;
 
-class adCal {
+class multi1 {
     public int multi(int r,int q)
     {
         return r*q;
