@@ -28,7 +28,7 @@ public class eh {
         }
         catch(Exception e)
         {
-            System.out.println("something went wrong"+e);
+            System.out.println("something went wrong");
         }
 
         System.out.println(j);
