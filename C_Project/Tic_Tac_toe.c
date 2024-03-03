@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 
+  
 void printBoard();
 int checkWin();
 void system();
@@ -11,7 +12,6 @@ void main(){
     int player=1,input,status=-1;
     printBoard();
    
-
     while (status==-1)
     {
         player=(player%2==0) ? 2 : 1;
@@ -38,10 +38,14 @@ void main(){
     player++;
     }
     
+
+
+    
     
 }
 
 void printBoard(){
+
     system("cls");
     printf("\n\n\t\t\t\t\t\t\t\t\x1b[33m");
     printf("=== TIC TAC TOE ===\n\n\t\t\t\t\t\t\t\t");
