@@ -1,26 +1,38 @@
 #include <stdio.h>
-
-
-  
+ 
 void printBoard();
 int checkWin();
-void system();
+
 
 char board[]={'0','1','2','3','4','5','6','7','8','9'};
 
 void main(){
     int player=1,input,status=-1;
     printBoard();
-   
+    
     while (status==-1)
     {
         player=(player%2==0) ? 2 : 1;
        char mark=(player==1) ? 'X' :'O';
-        printf("Please enter Number For Player %d\n",player);
+        printf("Please enter Number For Player %d\n  ",player);
         scanf("%d",&input);
-    if(input<1 || input>9){
-        printf("invalid input");
+
+    if(input<1 || input>9 )
+    {
+        printf("\033[0;31m");
+        printf("invalid input ");
+         printf("\033[0m");
+
     }
+
+     else if( board[input]=='X' || board[input]== 'O')
+    {   printf("\033[0;31m");
+        printf("Number position alredy taken \n" );
+        printf("\033[0m"); //excape from color
+        printf("\n");
+        continue;
+    }
+ 
 
     board[input]=mark;
     printBoard();
@@ -29,6 +41,7 @@ void main(){
 
     if(result==1){
         printf("Player %d is the Winner \nCongratulations\n",player);
+        printf("\u1f984");
         return;
     }else if(result==0){
         printf("draw");
@@ -46,8 +59,7 @@ void main(){
 
 void printBoard(){
 
-    system("cls");
-    printf("\n\n\t\t\t\t\t\t\t\t\x1b[33m");
+    printf("\n\n\t\t\t\t\t\t\t\t");
     printf("=== TIC TAC TOE ===\n\n\t\t\t\t\t\t\t\t");
     printf("     |     |     \n\t\t\t\t\t\t\t\t");
     printf("  %c  |  %c  |  %c  \n\t\t\t\t\t\t\t\t",board[1],board[2],board[3]);
