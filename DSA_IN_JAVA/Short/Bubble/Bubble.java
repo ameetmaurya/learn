@@ -1,4 +1,4 @@
-package Short;
+package Short.Bubble;
 
 public class Bubble {
 
