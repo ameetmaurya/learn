@@ -7,17 +7,21 @@
   }
 
   body{
-  background-image: url("assests/bgpage.svg");
-  background-size: cover;
+ background-color:gray;
+  
   }
 
+
+    
+ 
 .shopsy
 {
-    height: 100px;
+  
+    height: 240px;
     background-size: cover;
     position: relative;
-    left: 50px;
-    top: 50px;
+    left: -100px;
+    top: 10px;
     
 }
 
@@ -25,8 +29,8 @@
  
     width: 260px;
     position: relative;
-    left: 85%;
-    top: -10px;
+    left: 90%;
+    top: -160px;
     border: 2px solid black;
 }
 
@@ -38,15 +42,13 @@
  
 }
 
-#dowload{
-  
-}
  
 .discount{
    
     position: relative;
     top: 43px;
     left: 150px;
+    width: fit-content;
 }
  #writing
  {
@@ -64,6 +66,7 @@ font-size: 300%;
 
  #list{
     font-size: 200%;
+    width: fit-content;
  }
 
  .playstore{
@@ -85,11 +88,11 @@ font-size: 300%;
 
  .contanier1
  {
-    
-    height: 700px;
-    display: flex;
+   /* background-color: yellow; */
+    height: fit-content;
     position:relative;
     top: 300px;
+    text-align: center;
  }
  .img1{
     height: 900px;
@@ -112,4 +115,60 @@ font-size: 300%;
     height: 900px;
     position: relative;
     top:-100px;
+}
+
+/* part 3 */
+
+.GETSHOPSY{
+    text-align: center;
+   color: #f1e7e7;
+   position: relative;
+   top: 400px;
+  
+   
+   
+}
+
+.WHYSHOPSY
+{   
+    color: whitesmoke;
+    position: relative;
+    top: 600px;
+   text-align: center;
+   font-size: 50px;
+    
+    
+}
+/* 
+part4 */
+
+.contanier2{
+    height: 600px;
+    position: relative;
+    top: 600px;
+    text-align: center;
+    
+
+}
+
+.img5{
+    height: 500px;
+}
+
+.img6{
+    height: 500px;
+}
+.img7
+{
+    height: 500px;
+}
+
+/* footer */
+
+.contaner3
+{
+    background-color: white;
+    position: relative;
+    top: 700px;
+    height: 400px;
 }
