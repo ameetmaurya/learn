@@ -6,9 +6,10 @@
    
   
   }
+ 
 
   body{
- 
+ overflow-x: hidden;
  background-image: url("assests/bgpage.svg");
  background-size: cover;
 
@@ -36,7 +37,7 @@ background-attachment: fixed;
    
     width: 260px;
     position: relative;
-    left: 95%;
+    left: 90%;
     top: -160px;
     border: 2px solid black;
 }
@@ -194,9 +195,11 @@ part4 */
     text-align: center;
   
     height: 900px;
+    width: 100%;
     background-color:white;
     position: relative;
     top: 300px;
+
     
 }
 
