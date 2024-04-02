@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Care Store</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    color: #333;
+}
+
+.product p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Health & Care Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="imgassests/peetfood1.jpg" alt="Dog Food">
+            <h3>Dog Food</h3>
+            <p>$10.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="imgassests/petfood3.webp" alt="Dog Food">
+            <h3>Dog Food</h3>
+            <p>$8.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="imgassests/petfood4.jpeg" alt="Cat Food">
+            <h3>Cat Food</h3>
+            <p>$8.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="imgassests/petfood5.jpeg" alt="Cat Food">
+            <h3>Cat Food</h3>
+            <p>$8.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Food Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
