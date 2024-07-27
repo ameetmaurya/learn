@@ -5,7 +5,7 @@ int fact(int);
 void main()
 {
     int n,x;
-printf("Enter the number to find factorial ");
+printf("Enter the number to find factorial: ");
 scanf("%d",&x);
 
 n = fact(x);
