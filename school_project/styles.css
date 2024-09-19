@@ -1,0 +1,317 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #0044cc;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Logo Section */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar-logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centered horizontally */
+}
+
+.navbar-links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change color on hover */
+.navbar-links a:hover {
+    background-color: #003399;
+    color: white;
+}
+
+/* Active/current link */
+.navbar-links a.active {
+    background-color: #002266;
+    color: white;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    width: 300px; /* Adjust width as needed */
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #003d99;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+
+/* Style the banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6f61, #ffcc70);
+    color: #fff;
+    text-align: center;
+    height: 700px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('banner.png'); /* Replace with your image URL */
+    background-size: repeat;
+    background-position: center;
+}
+
+/* Add a subtle overlay for text readability */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Style the banner content */
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Style the main heading */
+.banner h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Style the slogan */
+.banner .slogan {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.afterbanner{
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.resources{
+    position: relative;
+    top: 16px;
+}
+
+
+/* Style the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Style individual image cards */
+.image-card {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-card:hover .description {
+    opacity: 1;
+}
+
+.description h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Reset some default browser styles */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the body and html have full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Style the main content area */
+.content {
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+/* Style the footer */
+.footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+}
