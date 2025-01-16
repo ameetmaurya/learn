@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-#define MAX 100
+#define MAX 10
 int stack[MAX];
 int top = -1;
 int push(int value) {
@@ -35,7 +35,7 @@ void printStack() {
 int main() {
     push(10);
     push(20);
-    push(0);
+    push(04);
   
 
     printf("Stack contents:\n");
@@ -50,7 +50,10 @@ int  poppedValue = pop();
     printf("Stack contents after pop:\n");
     printStack();
    
- 
+ for(int i=0;i<MAX;i++)
+ {
+    printf("%d  ",stack[i]);
+ }
     return 0;
 }
 

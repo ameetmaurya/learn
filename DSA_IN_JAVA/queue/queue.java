@@ -1,10 +1,10 @@
 package queue;
 import java.util.*;
 public class queue {
- final int inp_arr=10;
-int rear =-1;
-int front =-1;
-int[] queue =new int[inp_arr];
+static int inp_arr=10;
+static int rear =-1;
+static int front =-1;
+static int[] queue =new int[inp_arr];
 
 public void enqueue(int value)
 {
@@ -35,8 +35,11 @@ public int dequeue()
         
     }
     else{
-
-        return queue[front++];
+            int dequeValue = queue[front];
+            System.out.println("y age is:"+dequeValue);
+            queue[front]=0;
+            front++;
+        return dequeValue;
     }
     
     
@@ -45,7 +48,7 @@ public int dequeue()
 
 public void display()
 {
-if(rear==-1)
+if(front==-1 )
 System.out.println("Empty queue\n");
 
 else
@@ -73,12 +76,14 @@ myqueue.display();
     if (poppedValue != -1) {
         System.out.println("Popped value: " + poppedValue);
     }
-    myqueue.dequeue();
-    myqueue.dequeue();
-
-
     
-  
-        
+    myqueue.display();
+    System.out.println("-----------------------------");
+  for(int i=0;i<inp_arr;i++)
+  {
+    // if (i >= front && i <= rear)
+    System.out.println(queue[i]);
+  }
+ 
 }
 }

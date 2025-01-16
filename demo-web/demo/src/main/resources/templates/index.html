@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/register" method="post">
+       
+        <label for="fullname">First Name</label><br>
+        <input type="text" id="fullname" name="fullname" required/><br>
+
+       
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address" required/><br>
+
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required/><br>
+
+       
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required/><br>
+
+        
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required/><br>
+
+
+        <label for="gender">Gender</label><br>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+      
+        <button type="submit">Submit</button>
+
+<!--        
+        <div th:if="${session.message}" class="alert-success" role="alert">
+            <p th:text="${session.message}"></p>
+            
+            <th:block th:text="${#session.removeAttribute('message')}"></th:block>
+        </div> -->
+    </form>
+</body>
+</html>

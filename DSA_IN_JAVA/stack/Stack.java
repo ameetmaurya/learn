@@ -2,8 +2,8 @@ import java.util.*;
 import java.util.Scanner;
 
 class Stack {
-    final int MAX = 100;
-     int[] stack = new int[MAX];
+    static int MAX = 100;
+    static int[] stack = new int[MAX];
     // int stack[];
     int top = -1;
 
@@ -43,7 +43,7 @@ class Stack {
 
         myStack.push(10);
         myStack.push(20);
-        myStack.push(0);
+        myStack.push(30);
 
         System.out.println("Stack contents:");
         myStack.printStack();
@@ -55,5 +55,11 @@ class Stack {
 
         System.out.println("Stack contents after pop:");
         myStack.printStack();
+
+        for(int i=0;i<MAX;i++)
+
+        {
+             System.out.println(stack[i]);
+        }
     }
 }
