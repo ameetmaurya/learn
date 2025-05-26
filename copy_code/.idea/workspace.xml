@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="013a3dc7-98a2-4130-8ed5-ca9aca5b7084" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/src/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/src/components/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/Repository/userRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/Repository/userRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/entity/UserDtls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/entity/UserDtls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/indexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/templates/welcome.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Doctor-Appointment-Scheduler" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2uUnKSUbJoHAteluBkwvxRzaDVb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/sachin/learning/learn/copy_code"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="013a3dc7-98a2-4130-8ed5-ca9aca5b7084" name="Changes" comment="" />
+      <created>1742311956516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742311956516</updated>
+    </task>
+    <servers />
+  </component>
+</project>

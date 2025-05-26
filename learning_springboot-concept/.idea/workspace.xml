@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c288ce5-9c48-4719-9854-80eb0b9cc4e6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/src/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-1/src/components/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Springboot/ecom-frontend-4/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/entity/UserDtls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-web/demo/src/main/java/com/example/demo/entity/UserDtls.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2s9qvUl7txonuzckjDSq9bhe57T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/sachin/learning/learn/demo-web"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c288ce5-9c48-4719-9854-80eb0b9cc4e6" name="Changes" comment="" />
+      <created>1737878376135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737878376135</updated>
+    </task>
+    <servers />
+  </component>
+</project>

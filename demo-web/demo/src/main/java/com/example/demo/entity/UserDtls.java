@@ -1,16 +1,12 @@
 package com.example.demo.entity;
 
-import jakarta.annotation.Generated;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
+
 @Table(name="User_DTLS")
 public class UserDtls {
-     @Id
+@Id
      @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String fullname;
@@ -52,6 +48,7 @@ public class UserDtls {
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
