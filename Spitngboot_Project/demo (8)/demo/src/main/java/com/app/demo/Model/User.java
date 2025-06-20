@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 @Entity
 @Data //genrate geter and seter
-@Table(name="Student_DTLS")
+@Table(name="Bank_DTLS")
 public class User {
    @Id
    @GeneratedValue(strategy= GenerationType.AUTO)
@@ -13,5 +13,8 @@ public class User {
     private  String username ;
     private String password;
     private String phone;
+
+
+
 }
 

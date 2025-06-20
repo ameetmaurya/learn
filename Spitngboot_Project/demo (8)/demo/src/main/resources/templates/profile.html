@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile | NUKSAN</title>
+    <style>
+        /* Include your full CSS inline */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #fff;
+          color: #000;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px;
+          border-bottom: 1px solid #ddd;
+          font-size: 14px;
+        }
+
+        .logo {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .nav-links a,
+        .nav-actions a {
+          margin: 0 10px;
+          text-decoration: none;
+          color: black;
+          transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-actions a:hover {
+          color: #007bff;
+        }
+
+        .nav-actions button {
+          background: black;
+          color: white;
+          border: none;
+          padding: 6px 16px;
+          border-radius: 999px;
+          cursor: pointer;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .nav-actions button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-container {
+          padding: 40px;
+        }
+
+        .profile-wrapper {
+          display: flex;
+          gap: 40px;
+          margin-bottom: 40px;
+          align-items: flex-start;
+        }
+
+        .profile-pic {
+          width: 220px;
+          height: 260px;
+          border: 2px solid #000;
+          border-radius: 10px;
+          box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .pic-placeholder {
+          width: 80%;
+          height: 80%;
+          background-color: #f0f0f0;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: gray;
+          font-size: 16px;
+        }
+
+        .profile-info-card {
+          flex: 1;
+          padding: 24px;
+          border-radius: 12px;
+          box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+        }
+
+        .top-section {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        .top-section h1 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+
+        .top-section p {
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+
+        .kyc-badge {
+          display: inline-block;
+          margin-top: 12px;
+          background: #a7f8a2;
+          color: #000;
+          font-size: 12px;
+          padding: 6px 16px;
+          border-radius: 999px;
+          font-weight: 500;
+        }
+
+        .top-section img {
+          width: 100px;
+          height: 100px;
+          border: 2px solid #000;
+          border-radius: 8px;
+        }
+
+        .btn-group {
+          margin-top: 20px;
+        }
+
+        .btn {
+          padding: 8px 20px;
+          margin-right: 10px;
+          border-radius: 999px;
+          border: none;
+          background-color: #f0f0f0;
+          color: #000;
+          cursor: pointer;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .options-list {
+          width: 100%;
+          max-width: 1000px;
+          margin: auto;
+          border-top: 1px solid #ccc;
+        }
+
+        .option-row {
+          padding: 16px 10px;
+          border-bottom: 1px solid #ccc;
+          font-weight: 600;
+          font-size: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          transition: background 0.2s ease;
+        }
+
+        .option-row:hover {
+          background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">NUKSAN</div>
+    <nav class="nav-links">
+        <a href="/transaction">Transaction</a>
+        <a href="/addFunds">Add Funds</a>
+        <a href="/withdrawFunds">Withdraw Funds</a>
+        <a href="/fixedDeposit">Fix Deposit</a>
+        </nav>
+    <div class="nav-actions">
+        <a href="#">Help</a>
+        <button>Profile</button>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="main-container">
+    <div class="profile-wrapper">
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+            <div class="pic-placeholder"  > Profile Picture </div>
+        </div>
+
+        <!-- Profile Info Card -->
+        <div class="profile-info-card">
+            <div class="top-section">
+                <div class="left">
+                    <h1 th:text="${user.name}">John Mistri</h1>
+                    <p th:text="${user.email}">email</p>
+                    <p th:text="${user.phone}">phone</p>
+                    <p th:text="${user.accountId}">account</p>
+                    <p>IFSC : <span th:text="${user.ifsc}">xxxx</span></p>
+                    <span class="kyc-badge">KYC verified</span>
+                </div>
+                <div class="right">
+                    <img th:src="'https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=' + ${user.name}" alt="QR" />
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn edit">Edit</button>
+                <button class="btn setting">Setting</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Options List -->
+    <div class="options-list">
+        <div class="option-row">FAQs and Support <span>›</span></div>
+        <div class="option-row">Safety Tips <span>›</span></div>
+        <div class="option-row">Privacy settings <span>›</span></div>
+        <div class="option-row">T&Cs and policies <span>›</span></div>
+        <div class="option-row">Limits and Fees on Nuksan <span>›</span></div>
+    </div>
+</main>
+</body>
+</html>

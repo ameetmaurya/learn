@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Transaction | NUKSAN</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+          background-color: #f2f2f2;
+          color: #000;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px 32px;
+          background-color: #fff;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+          font-weight: bold;
+          font-size: 24px;
+        }
+
+        .nav-links a,
+        .nav-actions a {
+          text-decoration: none;
+          color: black;
+          margin: 0 10px;
+          font-size: 14px;
+        }
+
+        .nav-actions button {
+          padding: 6px 14px;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 20px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+
+        .main-content {
+          padding: 40px 60px;
+        }
+
+        .main-content h1 {
+          font-size: 32px;
+          margin-bottom: 6px;
+        }
+
+        .subtitle {
+          color: gray;
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+
+        .filter-card,
+        .transaction-card {
+          background-color: white;
+          padding: 20px 24px;
+          border-radius: 12px;
+          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+        }
+
+        .filter-card h2 {
+          font-size: 18px;
+          margin-bottom: 16px;
+        }
+
+        .filters {
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .filters input,
+        .filters select {
+          padding: 10px 14px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          flex: 1;
+          min-width: 180px;
+        }
+
+        .transaction-card h2 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
+
+        .table-header {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 0 10px;
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        .transaction-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 14px 0;
+          border-bottom: 1px solid #eee;
+          font-size: 14px;
+        }
+
+        .transaction-row div p {
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+
+        .transaction-row small {
+          color: gray;
+          font-size: 13px;
+        }
+
+        .amount {
+          font-weight: 600;
+        }
+
+        .amount.credit {
+          color: green;
+        }
+
+        .amount.debit {
+          color: red;
+        }
+    </style>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">NUKSAN</div>
+    <nav class="nav-links">
+        <a href="/transaction">Transaction</a>
+        <a href="/addFunds" class="active">Add Funds</a>
+        <a href="/withdrawFunds">Withdraw Funds</a>
+        <a href="/fixedDeposit">Fix Deposit</a>
+    </nav>
+    <div class="nav-actions">
+        <a href="#">Help</a>
+        <a href="/profile"><button>Profile</button></a>
+    </div>
+</header>
+
+<main class="main-content">
+    <h1>Transaction</h1>
+    <p class="subtitle">View and manage your transaction history</p>
+
+    <section class="filter-card">
+        <h2>Filters</h2>
+        <div class="filters">
+            <input type="text" placeholder="🔍 Search transactions..." />
+            <select>
+                <option>All Transactions</option>
+            </select>
+            <select>
+                <option>All Time</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="transaction-card">
+        <h2>Transaction History</h2>
+        <p class="subtitle" th:text="'Showing ' + ${transactions.size()} + ' transactions'">Showing X transactions</p>
+
+        <div class="table-header">
+            <span>Description</span>
+            <span>Date</span>
+            <span>Amount</span>
+        </div>
+
+        <div th:each="tx : ${transactions}" class="transaction-row">
+            <div>
+                <p th:text="${tx.description}">Salary Credit</p>
+                <small th:text="${tx.type}">Credit</small>
+            </div>
+            <span th:text="${tx.date}">2025-01-15</span>
+            <span class="amount" th:classappend="${tx.type == 'Credit'} ? ' credit' : ' debit'"
+                  th:text="${tx.type == 'Credit'} ? '+₹' + tx.amount : '-₹' + tx.amount">
+          +₹45,000.00
+        </span>
+        </div>
+    </section>
+</main>
+</body>
+</html>

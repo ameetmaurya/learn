@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Deposit</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #eef4ff;
+          padding: 40px;
+        }
+
+        .container {
+          max-width: 600px;
+          background: white;
+          margin: auto;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: block;
+          margin-top: 16px;
+          font-weight: bold;
+        }
+
+        input, select {
+          width: 100%;
+          padding: 10px;
+          margin-top: 6px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+        }
+
+        button {
+          margin-top: 24px;
+          padding: 12px;
+          width: 100%;
+          background-color: #007bff;
+          color: white;
+          font-weight: bold;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #0056cc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Create Fixed Deposit</h1>
+    <form th:action="@{/processFD}" th:object="${fdRequest}" method="post">
+        <label>Investment Amount</label>
+        <input type="number" th:field="*{amount}" placeholder="Enter amount" required />
+
+        <label>Duration (Months)</label>
+        <select th:field="*{duration}">
+            <option value="6">6 Months</option>
+            <option value="12">1 Year</option>
+            <option value="24">2 Years</option>
+            <option value="36">3 Years</option>
+        </select>
+
+        <label>Interest Rate (%)</label>
+        <input type="number" step="0.01" th:field="*{interestRate}" placeholder="e.g. 7.5" required />
+
+        <button type="submit">Calculate Maturity</button>
+    </form>
+</div>
+
+</body>
+</html>

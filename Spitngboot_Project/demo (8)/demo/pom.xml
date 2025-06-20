@@ -40,12 +40,12 @@
 		</dependency>
 
 
-		<dependency>
+<!--		<dependency>-->
 
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-crypto</artifactId>
-			<version>6.2.0</version>  <!-- Use the latest version if available -->
-		</dependency>
+<!--			<groupId>org.springframework.security</groupId>-->
+<!--			<artifactId>spring-security-crypto</artifactId>-->
+<!--			<version>6.2.0</version>  &lt;!&ndash; Use the latest version if available &ndash;&gt;-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

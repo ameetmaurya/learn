@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Funds - NUKSAN</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+
+        body {
+          background: linear-gradient(to bottom right, #e6f0ff, #f0f5ff);
+          color: #1a1a1a;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px;
+          border-bottom: 1px solid #ddd;
+          font-size: 14px;
+          background-color: #fff;
+        }
+
+        .logo {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .nav-links a,
+        .nav-actions a {
+          margin: 0 10px;
+          text-decoration: none;
+          color: black;
+          transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-actions a:hover {
+          color: #007bff;
+        }
+
+        .nav-actions button {
+          background: black;
+          color: white;
+          border: none;
+          padding: 6px 16px;
+          border-radius: 999px;
+          cursor: pointer;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .nav-actions button:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-section {
+          text-align: center;
+          padding: 40px 20px;
+        }
+
+        .main-title {
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .sub-title {
+          font-size: 14px;
+          margin-top: 6px;
+          color: #555;
+        }
+
+        .form-card {
+          max-width: 600px;
+          margin: 30px auto;
+          background-color: white;
+          border-radius: 12px;
+          padding: 30px;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+          text-align: left;
+        }
+
+        .form-card h2 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .form-card p {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 20px;
+        }
+
+        .form-card label {
+          display: block;
+          font-weight: 600;
+          margin: 15px 0 5px;
+          font-size: 14px;
+        }
+
+        .form-card input[type="number"],
+        .form-card select {
+          width: 100%;
+          padding: 12px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+          outline: none;
+          transition: 0.3s ease;
+        }
+
+        .form-card input[type="number"]:hover,
+        .form-card select:hover {
+          border-color: #007bff;
+        }
+
+        .quick-select {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 12px;
+          margin-top: 15px;
+        }
+
+        .quick-select button {
+          padding: 10px 0;
+          background-color: white;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: 0.3s ease;
+          font-weight: 500;
+        }
+
+        .quick-select button:hover {
+          border-color: #007bff;
+          background-color: #f0f8ff;
+        }
+
+        .submit-btn {
+          width: 100%;
+          padding: 14px;
+          background-color: #28a745;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          border: none;
+          border-radius: 6px;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+
+        .submit-btn:hover {
+          background-color: #218838;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .notice {
+          max-width: 700px;
+          margin: 30px auto;
+          background-color: #fff3cd;
+          color: #856404;
+          padding: 14px 20px;
+          font-size: 14px;
+          border-radius: 8px;
+          border: 1px solid #ffeeba;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">NUKSAN</div>
+    <nav class="nav-links">
+        <a href="/transaction">Transaction</a>
+        <a href="/addFunds" class="active">Add Funds</a>
+        <a href="/withdrawFunds">Withdraw Funds</a>
+        <a href="/fixedDeposit">Fix Deposit</a>
+    </nav>
+    <div class="nav-actions">
+        <a href="#">Help</a>
+        <a href="/profile"><button>Profile</button></a>
+    </div>
+</header>
+
+<!-- Main Section -->
+<main class="main-section">
+    <h1 class="main-title">Add Funds</h1>
+    <p class="sub-title">Deposit money to your account securely</p>
+
+    <div class="form-card">
+        <h2>Add Money to Your Account</h2>
+        <p>Choose your preferred payment method and enter the amount</p>
+
+        <!-- Thymeleaf Form -->
+        <form th:action="@{/processFunds}" th:object="${fundRequest}" method="post">
+            <!-- Amount -->
+            <label for="amount">Amount</label>
+            <input type="number" th:field="*{amount}" placeholder="₹ Enter amount" />
+
+            <!-- Quick Select -->
+            <div class="quick-select">
+                <button type="button" onclick="document.getElementById('amount').value='1000'">₹1,000.00</button>
+                <button type="button" onclick="document.getElementById('amount').value='2500'">₹2,500.00</button>
+                <button type="button" onclick="document.getElementById('amount').value='5000'">₹5,000.00</button>
+                <button type="button" onclick="document.getElementById('amount').value='10000'">₹10,000.00</button>
+                <button type="button" onclick="document.getElementById('amount').value='25000'">₹25,000.00</button>
+                <button type="button" onclick="document.getElementById('amount').value='50000'">₹50,000.00</button>
+            </div>
+
+            <!-- Method -->
+            <label for="method">Payment Method</label>
+            <select th:field="*{method}">
+                <option value="" disabled selected>Choose payment method</option>
+                <option value="CreditCard">Credit/Debit Card</option>
+                <option value="UPI">UPI</option>
+                <option value="Wallet">Wallet</option>
+            </select>
+
+            <!-- Submit -->
+            <button class="submit-btn" type="submit">Add Funds</button>
+        </form>
+    </div>
+
+    <!-- Security Note -->
+    <div class="notice">
+        <strong>Security Notice:</strong> All transactions are encrypted and secure. We never store your payment information. Funds will be available in your account within 1–2 business days.
+    </div>
+</main>
+
+</body>
+</html>
